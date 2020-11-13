@@ -1,0 +1,157 @@
+body{
+    box-sizing: border-box;
+    color: navy;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+}
+header>h1{
+    color: white;
+    margin: 0.5em;
+    padding: 0.2rem;
+    text-shadow: 3px 3px 4px cyan;
+    animation: colorChanger 1s infinite;
+    font-size: 3rem;
+    
+}
+@keyframes colorChanger{
+    0%{
+        text-shadow: 3px 3px 4px cyan,-2px -2px 4px cyan;
+    }
+    50%{
+        text-shadow: 3px 3px 4px crimson,-2px -2px 4px crimson;
+    }
+    100%{
+        text-shadow: 3px 3px 4px purple,-2px -2px 4px purple;
+    }
+}
+#start{
+    cursor: pointer;
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    background-color:royalblue;
+    color: white;
+    border:none;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 3px rgba(0, 0,0, 0.4),-2px -2px 3px rgba(0, 0,0, 0.4);
+}
+section {
+    color: white;
+}
+section >div> h4{
+    text-align: center;
+    border-bottom: 4px solid crimson;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 0;
+    color: black;
+    font-size: 1.2rem;
+}
+section > div{
+    background-color: white;
+    border-radius: 12px;
+    height: 500px;
+    width: 320px;
+    margin: auto;
+    box-shadow: 4px 4px 6px rgba(0, 0,0, 0.4),-2px -2px 6px rgba(0, 0,0, 0.4);
+}
+#topPart{
+    height: 130px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#gameContainer{
+    display: none;
+}
+#bottomPart{
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#bottomPart > .cell{
+    width: 42px;
+    margin: 1px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid crimson;
+    color: darkblue;
+    cursor: pointer;
+    transition: all 0.3s ;
+    box-shadow: 2px 2px 3px rgba(0, 0,0, 0.3),-2px -2px 3px rgba(0, 0,0, 0.3);
+}
+#randomNo,#userCalculation{
+    width: 100px;
+    height: 100px;
+    background-color:crimson;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+
+    margin:0.5rem;
+    border-radius: 12px;
+    box-shadow: 4px 4px 6px rgba(0, 0,0, 0.4) inset;
+}
+#userCalculation{
+   background-color:royalblue;
+}
+
+.selected{
+    background-color: red;
+   
+}
+#msg{
+    color: red;
+    
+}
+#currentScore{
+   color: green;
+   
+}
+#msg-score-container{
+    border-radius: 12px;
+    height: 15rem;
+    width: 15rem;
+    padding-bottom: 0.5rem;
+    display: none;
+  
+    background-color: white;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    box-shadow: 4px 4px 6px rgba(0, 0,0, 0.4),-2px -2px 6px rgba(0, 0,0, 0.4);
+}
+#msg-score-container>img{
+    height: 6rem;
+    width: 6rem;
+}
