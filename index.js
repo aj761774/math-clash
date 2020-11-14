@@ -1,3 +1,4 @@
+
 const grid = document.getElementById("bottomPart");
 const randomNo = document.getElementById("randomNo");
 const gameContainer = document.getElementById("gameContainer");
@@ -154,7 +155,7 @@ const checkGameOver = ()=>{
         }
     }
     if(flag){
-        intervalId = setTimeout(intervalManager,7000);
+        intervalId = setTimeout(intervalManager,6000);
     }
     else{
         intervalId = setTimeout(intervalManager,200);
